@@ -358,7 +358,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
         <div style="padding: 16px; border-radius: var(--radius-md); background: var(--bg-surface-elevated); border: 1px solid var(--border-subtle); font-size: 0.95rem; color: var(--text-main); line-height: 1.6;">
           <div style="margin-bottom: 8px;"><strong>Project:</strong> MediSync AI – Intelligent Integrated Hospital Management & Healthcare Assistance System</div>
-          <div><strong>Repository:</strong> GitHub — <a href="https://github.com/gousik-lakshmanan/hospital-management-system" target="_blank" style="color: var(--accent-primary); text-decoration: none;">gousik-lakshmanan/hospital-management-system</a></div>
+          <div style="margin-bottom: 8px;"><strong>Repository:</strong> GitHub — <a href="https://github.com/gousik-lakshmanan/hospital-management-system" target="_blank" rel="noopener noreferrer" style="color: var(--accent-primary); text-decoration: none;">gousik-lakshmanan/hospital-management-system</a></div>
+          <div><strong>Live Demo:</strong> <a href="https://medisync-v1.onrender.com?utm_source=chatgpt.com" target="_blank" rel="noopener noreferrer" style="color: var(--accent-primary); text-decoration: none;">MediSync AI – Live Demo</a></div>
         </div>
       `
     },
