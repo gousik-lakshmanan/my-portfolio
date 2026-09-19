@@ -51,8 +51,7 @@
   <!-- Ambient Background Canvas Layer -->
   <div class="bg-ambient-layer" aria-hidden="true"></div>
 
-  <!-- Hidden Photo File Input for Instant User Photo Swapping -->
-  <input type="file" id="photo-input" accept="image/*" style="display: none;" aria-label="Upload custom profile photo">
+
 
   <!-- =========================================================================
        Navigation Bar
@@ -225,7 +224,7 @@
               <!-- Profile Image Container with Glow & Gradient Framer -->
               <div class="profile-image-container" id="profile-container">
                 <!-- Fallback High-Fidelity Vector Stylized Likeness Representation of Gousik -->
-                <div class="profile-svg-avatar" id="profile-svg-fallback">
+                <div class="profile-svg-avatar" id="profile-svg-fallback" style="display: none;">
                   <svg viewBox="0 0 320 380" fill="none" xmlns="http://www.w3.org/2000/svg" style="width: 100%; height: 100%;">
                     <defs>
                       <linearGradient id="bgGrad" x1="0" y1="0" x2="0" y2="1">
@@ -290,7 +289,7 @@
                 </div>
 
                 <!-- Actual Image Tag (renders if user dropped or uploaded photo) -->
-                <img src="" alt="Gousik Lakshmanan - Full-Stack Developer" class="profile-img" id="hero-profile-img" style="display: none;" referrerpolicy="no-referrer">
+                <img src="./profile-image.jpg" alt="Gousik Lakshmanan - Full-Stack Developer" class="profile-img" id="hero-profile-img" style="display: block;" referrerpolicy="no-referrer">
 
                 <!-- Gradient Overlay -->
                 <div class="profile-overlay" aria-hidden="true"></div>
@@ -302,17 +301,7 @@
                 </div>
               </div>
 
-              <!-- Quick Customizer Trigger: Allows user to click/drop their passport photo instantly -->
-              <div class="photo-uploader-trigger" id="photo-upload-trigger" title="Upload/Change Profile Picture with your exact passport photo">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                  <path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h7"/>
-                  <line x1="16" y1="5" x2="22" y2="5"/>
-                  <line x1="19" y1="2" x2="19" y2="8"/>
-                  <circle cx="9" cy="9" r="2"/>
-                  <path d="m21 15-3.086-3.086a2 2 0 0 0-2.828 0L6 21"/>
-                </svg>
-                <span>Upload / Change Photo</span>
-              </div>
+
 
               <!-- Floating Technology Badges -->
               <div class="floating-badge floating-badge-1" title="React.js Component Architecture">
@@ -772,15 +761,16 @@
 
               <div class="project-actions">
                 <button class="btn btn-primary project-detail-btn" data-project="hospital">
-                  Explore Architecture
+                  Project Details
+
                   <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                     <circle cx="12" cy="12" r="10"/>
                     <line x1="12" y1="16" x2="12" y2="12"/>
                     <line x1="12" y1="8" x2="12.01" y2="8"/>
                   </svg>
                 </button>
-                <a href="https://github.com/gousik-lakshmanan" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">
-                  GitHub Profile
+                <a href="https://github.com/gousik-lakshmanan/hospital-management-system" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">
+                  GitHub Repository
                   <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                     <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/>
                     <polyline points="15 3 21 3 21 9"/>
@@ -832,7 +822,7 @@
               </div>
 
               <div class="project-actions">
-                <button class="btn btn-secondary project-detail-btn" data-project="payanam">
+                <button class="btn btn-primary project-detail-btn" data-project="payanam">
                   Project Details
                   <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                     <circle cx="12" cy="12" r="10"/>
@@ -840,8 +830,13 @@
                     <line x1="12" y1="8" x2="12.01" y2="8"/>
                   </svg>
                 </button>
-                <a href="https://github.com/gousik-lakshmanan" target="_blank" rel="noopener noreferrer" class="btn btn-outline">
-                  GitHub Profile
+                <a href="https://github.com/gousik-lakshmanan/payanam-updated-version" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">
+                  GitHub Repository
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/>
+                    <polyline points="15 3 21 3 21 9"/>
+                    <line x1="10" y1="14" x2="21" y2="3"/>
+                  </svg>
                 </a>
               </div>
             </div>
@@ -882,7 +877,7 @@
               </div>
 
               <div class="project-actions">
-                <button class="btn btn-secondary project-detail-btn" data-project="visitor">
+                <button class="btn btn-primary project-detail-btn" data-project="visitor">
                   Project Details
                   <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                     <circle cx="12" cy="12" r="10"/>
@@ -890,8 +885,13 @@
                     <line x1="12" y1="8" x2="12.01" y2="8"/>
                   </svg>
                 </button>
-                <a href="https://github.com/gousik-lakshmanan" target="_blank" rel="noopener noreferrer" class="btn btn-outline">
-                  GitHub Profile
+                <a href="https://github.com/gousik-lakshmanan/visitor-management-system" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">
+                  GitHub Repository
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/>
+                    <polyline points="15 3 21 3 21 9"/>
+                    <line x1="10" y1="14" x2="21" y2="3"/>
+                  </svg>
                 </a>
               </div>
             </div>
@@ -937,7 +937,7 @@
               </div>
 
               <div class="project-actions">
-                <button class="btn btn-secondary project-detail-btn" data-project="agriculture">
+                <button class="btn btn-primary project-detail-btn" data-project="agriculture">
                   Design Specifications
                   <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                     <circle cx="12" cy="12" r="10"/>
@@ -945,8 +945,13 @@
                     <line x1="12" y1="8" x2="12.01" y2="8"/>
                   </svg>
                 </button>
-                <a href="#contact" class="btn btn-outline">
-                  Inquire Designs
+                <a href="https://www.figma.com/design/dI2A1I5krNwhN5hwN8O7U2/Untitled?node-id=0-1&t=qo79R1Mq0Lg29kWz-1" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">
+                  Explore Design
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/>
+                    <polyline points="15 3 21 3 21 9"/>
+                    <line x1="10" y1="14" x2="21" y2="3"/>
+                  </svg>
                 </a>
               </div>
             </div>

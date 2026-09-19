@@ -109,6 +109,8 @@ html {
   scroll-behavior: smooth;
   scroll-padding-top: calc(var(--nav-height) + 16px);
   -webkit-text-size-adjust: 100%;
+  overflow-x: hidden;
+  width: 100%;
 }
 
 body {
@@ -118,6 +120,7 @@ body {
   line-height: 1.65;
   font-size: 16px;
   overflow-x: hidden;
+  width: 100%;
   transition: background-color var(--transition-smooth), color var(--transition-smooth);
   position: relative;
   min-height: 100vh;
@@ -535,9 +538,15 @@ button {
   border-radius: var(--radius-md);
   font-size: 0.95rem;
   font-weight: 600;
-  transition: all var(--transition-base);
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
   text-decoration: none;
   white-space: nowrap;
+  position: relative;
+  overflow: hidden;
+}
+
+.btn:active {
+  transform: translateY(0) scale(0.97);
 }
 
 .btn svg {
@@ -547,35 +556,38 @@ button {
 }
 
 .btn-primary {
-  background: var(--accent-gradient);
+  background: linear-gradient(135deg, #00d2ff 0%, #0070f3 100%);
   color: #ffffff;
-  box-shadow: 0 4px 18px var(--accent-glow);
+  box-shadow: 0 4px 15px rgba(0, 210, 255, 0.2);
+  border: none;
 }
 
 .btn-primary:hover {
   transform: translateY(-2px);
-  box-shadow: 0 6px 26px var(--accent-glow);
+  box-shadow: 0 8px 25px rgba(0, 210, 255, 0.4);
+  background: linear-gradient(135deg, #1ae0ff 0%, #007dfc 100%);
 }
 
 .btn-primary:hover svg {
-  transform: translateX(3px);
+  transform: translateX(4px);
 }
 
 .btn-secondary {
-  background: var(--bg-surface-elevated);
-  border: 1px solid var(--border-subtle);
-  color: var(--text-main);
+  background: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  color: #ffffff;
 }
 
 .btn-secondary:hover {
-  border-color: var(--accent-border);
-  color: var(--accent-primary);
+  border-color: rgba(255, 255, 255, 0.4);
+  background: rgba(255, 255, 255, 0.05);
+  color: #ffffff;
   transform: translateY(-2px);
-  box-shadow: var(--shadow-glow-sm);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
 }
 
 .btn-secondary:hover svg {
-  transform: translateY(2px);
+  transform: translateY(-2px) translateX(2px);
 }
 
 .btn-outline {
